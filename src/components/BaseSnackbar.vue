@@ -49,10 +49,10 @@ export default {
       required: true
     }
   },
-  emits: ['clear', 'update:modelValue'],
+  emits: ['update:modelValue'],
   methods: {
     clear() {
-      this.$emit('clear');
+      this.$emit('update:modelValue', false);
     },
   }
 };
